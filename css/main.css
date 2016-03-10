@@ -22,8 +22,8 @@ dl, dd, ol, ul, figure {
 /* Global Styling
 -------------------------------------------------- */
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: 20px;
   line-height: 1.5;
   font-weight: 300;
   color: #111;
@@ -123,15 +123,16 @@ pre > code {
 /* Nav Bar
 -------------------------------------------------- */
 .navbar-orange {
-  background-color: #f86c06;
+  background-color: #e67e22;
+/*  background-color: #f86c06;*/
 }
 
 .navbar-orange a {
   color: #ffebcd;
 }
 
-.navbar-orange .nav li a:focus, .navbar-orange .nav li a:hover {
-  color: #ffebcd;
+.navbar-orange a:hover {
+  color: white;
   background: none !important;
 }
 
@@ -154,8 +155,23 @@ h1.jumbo-title {
 
 /* Post List
 -------------------------------------------------- */
+ul.post-list {
+  list-style-type: none;
+}
+
 .post-list {
   font-size: 1.2em;
+}
+
+.post-list-item {
+  background: none;
+  border-radius: 3px;
+  border: 0px;
+  padding: 5px 10px 5px 10px;
+}
+
+.post-list li:hover {
+  background: #fef0da;
 }
 
 .post-meta {
