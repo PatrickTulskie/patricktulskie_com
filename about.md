@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about
+permalink: /about/
 ---
 
 I am Patrick Tulskie.  I wasn't given this name by choice, but I don't really have any plans to change it.  It's really grown on me.
