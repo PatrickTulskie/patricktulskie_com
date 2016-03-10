@@ -140,6 +140,10 @@ pre > code {
 .jumbotron-header {
   /* Pull up against the header*/
   margin-top: -20px;
+  background-color: #gray;
+}
+
+.jumbotron-header-orange {
   background-color: #fef0da;
 }
 
@@ -156,6 +160,11 @@ h1.jumbo-title {
 
 .post-meta {
   float: right;
+  color: gray;
+}
+
+.post-footer {
+  float: left;
   color: gray;
 }
 

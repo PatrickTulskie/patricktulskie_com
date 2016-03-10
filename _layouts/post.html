@@ -13,6 +13,14 @@ layout: default
   <div class="row">
     <div class="col-lg-2"></div>
     <div class="col-lg-8">
+      <p class="post-meta">
+        {{ page.date | date: "%b %-d, %Y" }}
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
       <div class="post">
         <article class="post-content">
           {{ content }}
@@ -23,10 +31,16 @@ layout: default
   </div>
   <div class="row">
     <div class="col-lg-2"></div>
-    <div class="col-lg-8">
-      <p class="post-meta">
-        {{ page.date | date: "%b %-d, %Y" }}
+    <div class="col-lg-6">
+      <p class="post-footer">
+        @PatrickTulskie
       </p>
     </div>
+    <div class="col-lg-2">
+      <p class="post-meta">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="PatrickTulskie">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </p>
+    </div>
+    <div class="col-lg-2"></div>
   </div>
 </div>

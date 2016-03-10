@@ -4,8 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I am Patrick Tulskie.  I wasn't given this name by choice, but I don't really have any plans to change it.  It's really grown on me.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+I'm a software engineer based out of New York.  I work in New York City but I would never live there.  I much prefer it in the burbs where there are trees and open space.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Currently I work at BeenVerified.  I started with the company in September 2008 back when there were only a few of us sharing a small room in an office in Mid Town Manhattan.  One pivot, several product iterations, and more mistakes than I can count later, I'm still there.  I love what I do and the team that I've helped to grow and I wouldn't trade it for the world.
+
+When I'm not hacking on software and optimizing for performance, you can find me at the race track or wrenching on my car in the garage.
