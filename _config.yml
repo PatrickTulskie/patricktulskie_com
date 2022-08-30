@@ -8,9 +8,21 @@ url: "http://patricktulskie.com" # the base hostname & protocol for your site
 twitter_username: patricktulskie
 github_username:  patricktulskie
 permalink: posts/:year/:month/:title/
+logo:
+  url: "img/sunglasses.jpg"
 
 # Build settings
 markdown: kramdown
+
+exclude:
+- "*.json"
+- "Gemfile*"
+- "*.txt"
+- vendor
+- readme.md
+- "*.yaml"
+- "*.yml"
+- Dockerfile
 
 gems:
   - jekyll-sitemap

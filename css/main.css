@@ -22,7 +22,7 @@ dl, dd, ol, ul, figure {
 /* Global Styling
 -------------------------------------------------- */
 body {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 20px;
   line-height: 1.5;
   font-weight: 300;
@@ -59,14 +59,13 @@ figcaption {
 
 /* Links
 -------------------------------------------------- */
-a {
-/*  color: #fd7f05;*/
+a, a:hover {
   color: #f86c06;
   text-decoration: none;
 }
-a:hover {
-  color: #f86c06;
-  text-decoration: none;
+
+.nav-pills .nav-link.active {
+  background-color: #f86c06;
 }
 
 /* Blockquotes
@@ -122,25 +121,86 @@ pre > code {
 
 /* Nav Bar
 -------------------------------------------------- */
-.navbar-orange {
-  background-color: #e67e22;
-/*  background-color: #f86c06;*/
+.form-control-dark {
+  color: #fff;
+  background-color: var(--bs-dark);
+  border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+  color: #fff;
+  background-color: var(--bs-dark);
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
 }
 
-.navbar-orange a {
-  color: #ffebcd;
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
 }
 
-.navbar-orange a:hover {
-  color: white;
-  background: none !important;
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+/* Buttons
+-------------------------------------------------- */
+.btn-rounded {
+  border-radius: 10rem;
+}
+
+.btn-purple {
+  color: #fff;
+  background-color: #b23cfd;
+}
+.btn-purple:hover {
+  color: #fff;
+  background-color: #a316fd;
+}
+
+.btn-golden {
+  color: #fff;
+  background-color: #ffa900;
+}
+.btn-golden:hover {
+  color: #fff;
+  background-color: #d99000;
+}
+
+.btn-dark {
+  color: #fff;
+  background-color: #262626;
+}
+.btn-dark:hover {
+  background-color: #202020;
+  border-color: #1e1e1e;
+}
+
+.btn-light-blue {
+  color: #fff;
+  background-color: #39c0ed;
+}
+.btn-light-blue:hover {
+  color: #fff;
+  background-color: #57c9f0;
+  border-color: #4dc6ef;
+}
+
+.btn-blue {
+  color: #fff;
+  background-color: #1266f1;
+}
+.btn-blue:hover {
+  background-color: #0f57cd;
+  border-color: #0e52c1;
 }
 
 /* Jumbotron
 -------------------------------------------------- */
 .jumbotron-header {
-  /* Pull up against the header*/
-  margin-top: -20px;
   background-color: #gray;
 }
 
@@ -152,6 +212,39 @@ h1.jumbo-title {
   font-size: 30px;
   margin-bottom: 0px;
 }
+/* Social List
+------------------------------------------------- */
+ul.social-list {
+  list-style-type: none;
+}
+
+.social-list {
+  font-size: 1.2em;
+}
+
+.social-list-item {
+  background: none;
+  border-radius: 3px;
+  border: 0px;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+}
+
+.social-meta {
+  float: right;
+  color: gray;
+}
+
+.social-footer {
+  float: left;
+  color: gray;
+}
+
+ul.social-list button {
+  width: 30%;
+  font-size: 20px;
+}
+
 
 /* Post List
 -------------------------------------------------- */
@@ -381,3 +474,5 @@ ul.post-list {
 .highlight .il {
   color: #099;
 }
+
+
