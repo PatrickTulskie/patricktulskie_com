@@ -14,5 +14,15 @@ logo:
 # Build settings
 markdown: kramdown
 
+exclude:
+- "*.json"
+- "Gemfile*"
+- "*.txt"
+- vendor
+- readme.md
+- "*.yaml"
+- "*.yml"
+- Dockerfile
+
 gems:
   - jekyll-sitemap
