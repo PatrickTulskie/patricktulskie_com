@@ -22,7 +22,7 @@ dl, dd, ol, ul, figure {
 /* Global Styling
 -------------------------------------------------- */
 body {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 20px;
   line-height: 1.5;
   font-weight: 300;
@@ -59,14 +59,13 @@ figcaption {
 
 /* Links
 -------------------------------------------------- */
-a {
-/*  color: #fd7f05;*/
+a, a:hover {
   color: #f86c06;
   text-decoration: none;
 }
-a:hover {
-  color: #f86c06;
-  text-decoration: none;
+
+.nav-pills .nav-link.active {
+  background-color: #f86c06;
 }
 
 /* Blockquotes
@@ -122,47 +121,29 @@ pre > code {
 
 /* Nav Bar
 -------------------------------------------------- */
-.navbar-orange {
-  background-color: #e67e22;
-/*  background-color: #f86c06;*/
-}
-
-.navbar-orange a {
-  color: #ffebcd;
-}
-
-.navbar-orange a:hover {
-  color: white;
-  background: none !important;
-}
-
-.navbar-inverse {
-  background-image: -webkit-linear-gradient(top, #3c3c3c 0%, #222 100%);
-  background-image:      -o-linear-gradient(top, #3c3c3c 0%, #222 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(#222));
-  background-image:         linear-gradient(to bottom, #3c3c3c 0%, #222 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  background-repeat: repeat-x;
-}
-.navbar-inverse .navbar-nav > .open > a,
-.navbar-inverse .navbar-nav > .active > a {
-  background-image: -webkit-linear-gradient(top, #080808 0%, #0f0f0f 100%);
-  background-image:      -o-linear-gradient(top, #080808 0%, #0f0f0f 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#080808), to(#0f0f0f));
-  background-image:         linear-gradient(to bottom, #080808 0%, #0f0f0f 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff080808', endColorstr='#ff0f0f0f', GradientType=0);
-  background-repeat: repeat-x;
-  -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, .25);
-          box-shadow: inset 0 3px 9px rgba(0, 0, 0, .25);
-}
-.navbar-inverse .navbar-brand,
-.navbar-inverse .navbar-nav > li > a {
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
-}
-
-.navbar-inverse .navbar-brand {
+.form-control-dark {
   color: #fff;
+  background-color: var(--bs-dark);
+  border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+  color: #fff;
+  background-color: var(--bs-dark);
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle {
+  outline: 0;
 }
 
 /* Buttons
@@ -171,11 +152,55 @@ pre > code {
   border-radius: 10rem;
 }
 
+.btn-purple {
+  color: #fff;
+  background-color: #b23cfd;
+}
+.btn-purple:hover {
+  color: #fff;
+  background-color: #a316fd;
+}
+
+.btn-golden {
+  color: #fff;
+  background-color: #ffa900;
+}
+.btn-golden:hover {
+  color: #fff;
+  background-color: #d99000;
+}
+
+.btn-dark {
+  color: #fff;
+  background-color: #262626;
+}
+.btn-dark:hover {
+  background-color: #202020;
+  border-color: #1e1e1e;
+}
+
+.btn-light-blue {
+  color: #fff;
+  background-color: #39c0ed;
+}
+.btn-light-blue:hover {
+  color: #fff;
+  background-color: #57c9f0;
+  border-color: #4dc6ef;
+}
+
+.btn-blue {
+  color: #fff;
+  background-color: #1266f1;
+}
+.btn-blue:hover {
+  background-color: #0f57cd;
+  border-color: #0e52c1;
+}
+
 /* Jumbotron
 -------------------------------------------------- */
 .jumbotron-header {
-  /* Pull up against the header*/
-  margin-top: -20px;
   background-color: #gray;
 }
 
@@ -216,7 +241,7 @@ ul.social-list {
 }
 
 ul.social-list button {
-  width: 60%;
+  width: 30%;
   font-size: 20px;
 }
 

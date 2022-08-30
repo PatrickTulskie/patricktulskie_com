@@ -3,52 +3,28 @@ layout: default
 navbar: orange
 ---
 
-<div class="jumbotron jumbotron-header jumbotron-header-orange">
-  <div class="container">
-    <div class="col-lg-12">
-      <h1 class="jumbo-title text-center">Software Engineer & Angel Investor</h1>
+<section class="py-5 text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light">Find Me on the Internets</h1>
+      <p class="lead text-muted">I love exploring new tech and platforms. You can find me all over the net on some of the sites below.</p>
     </div>
   </div>
+</section>
+
+<div id="social-media-links" class="py-5 bg-light">
+  <ul class="social-list">
+    {% assign sm = site.data.social-media %}
+    {% for entry in sm %}
+      {% assign key = entry | first %}
+      <li class="social-list-item">
+        <a href="{{ sm[key].href }}/{{ sm[key].id }}" title="{{ sm[key].title }}" target="blank">
+          <button class="btn btn-{{ sm[key].color }} btn-rounded">
+            <i class="fa-brands {{ sm[key].fa-icon }}"></i> {{ sm[key].title }}
+          </button>
+        </a>
+      <li/>
+    {% endfor %}
+  </ul>
 </div>
 
-<div id="social-media-links" class="container">
-   <div class="row">
-    <div class="col-lg-2"></div>
-    <div class="col-lg-8">
-      <ul class="social-list">
-        {% assign sm = site.data.social-media %}
-        {% for entry in sm %}
-          {% assign key = entry | first %}
-          <li class="social-list-item">
-            <a href="{{ sm[key].href }}/{{ sm[key].id }}" title="{{ sm[key].title }}">
-              <button class="btn btn-{{ sm[key].color }} btn-rounded">
-                <i class="fa-brands {{ sm[key].fa-icon }}"></i> {{ sm[key].title }}
-              </button>
-            </a>
-          <li/>
-        {% endfor %}
-      </ul>
-    </div>
-    <div class="col-lg-2"></div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-lg-2"></div>
-    <div class="col-lg-8">
-      <ul class="post-list">
-        {% for post in site.posts %}
-          <li class="post-list-item">
-            <a href="{{ post.url | prepend: site.baseurl }}">
-              <span class="post-title">{{ post.title }}</span>
-              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-    <div class="col-lg-2"></div>
-  </div>
-
-</div>

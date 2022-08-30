@@ -1,17 +1,29 @@
-<!-- Static navbar -->
-<nav class="navbar navbar-static-top {% if page.navbar == 'orange' %}navbar-orange{% else %}navbar-inverse{% endif %}">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-</nav>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="grid" viewBox="0 0 16 16">
+    <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+  </symbol>
+</svg>
+
+<div class="container">
+  <header class="d-flex flex-wrap justify-content-between py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#grid"></use></svg>-->
+      <img src="/{{ site.logo.url | prepend: site.base.url }}" class="rounded-circle" width="40" height="40" />&nbsp;&nbsp;
+      <span class="fs-4">Patrick Tulskie</span>
+    </a>
+
+    <ul class="nav nav-pills justify-content-right">
+      {% for site_page in site.pages %}
+        {% if site_page.title %}
+          <li class="nav-item">
+            {% if site_page.title == page.title %}
+              <a href="{{ site_page.url | prepend: site.baseurl }}" class="nav-link active" aria-current="page">{{ site_page.title }}</a>
+            {% else %}
+              <a href="{{ site_page.url | prepend: site.baseurl }}" class="nav-link">{{ site_page.title }}</a>
+            {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </header>
+</div>

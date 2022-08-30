@@ -2,14 +2,14 @@ instagram:
   id: '_patrick'
   href: 'https://www.instagram.com'
   title: 'Instagram'
-  color: 'secondary'
+  color: 'purple'
   fa-icon: 'fa-instagram'
 
 twitter:
   id: 'patricktulskie'
   href: 'https://www.twitter.com'
   title: 'Twitter'
-  color: 'info'
+  color: 'light-blue'
   fa-icon: 'fa-twitter'
 
 github:
@@ -18,3 +18,10 @@ github:
   title: 'GitHub'
   color: 'dark'
   fa-icon: 'fa-github'
+
+linkedin:
+  id: 'patricktulskie'
+  href: 'https://www.linkedin.com/in'
+  title: 'LinkedIn'
+  color: 'blue'
+  fa-icon: 'fa-linkedin-in'
