@@ -25,3 +25,17 @@ linkedin:
   title: 'LinkedIn'
   color: 'blue'
   fa-icon: 'fa-linkedin-in'
+
+discord:
+  id: '803817658318454798'
+  href: 'https://discord.com/users'
+  title: 'Discord'
+  color: 'purple'
+  fa-icon: 'fa-discord'
+
+openpgp:
+  id: '6574854F18A5FBAB39D0AFD231FE0A044970C198'
+  href: 'https://keys.openpgp.org/vks/v1/by-fingerprint'
+  title: 'OpenPGP'
+  color: 'dark'
+  fa-icon: 'fa-solid fa-key'
