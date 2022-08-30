@@ -2,7 +2,8 @@ version: '3'
 
 services:
   jekyll:
-    image: jekyll/jekyll:latest
+    build: .
+    image: "patricktulskie/jekyll"
     command: jekyll serve --watch --force_polling --verbose
     ports:
       - 4000:4000
