@@ -114,7 +114,7 @@ pre > code {
 }
 
 .contact-list,
-.social-media-list {
+.link-list {
   list-style: none;
   margin-left: 0;
 }
@@ -214,15 +214,15 @@ h1.jumbo-title {
 }
 /* Social List
 ------------------------------------------------- */
-ul.social-list {
+ul.link-list {
   list-style-type: none;
 }
 
-.social-list {
+.link-list {
   font-size: 1.2em;
 }
 
-.social-list-item {
+.link-list-item {
   background: none;
   border-radius: 3px;
   border: 0px;
@@ -230,18 +230,18 @@ ul.social-list {
   text-align: center;
 }
 
-.social-meta {
+.link-meta {
   float: right;
   color: gray;
 }
 
-.social-footer {
+.link-footer {
   float: left;
   color: gray;
 }
 
-ul.social-list button {
-  width: 30%;
+ul.link-list button {
+  width: 60%;
   font-size: 20px;
 }
 

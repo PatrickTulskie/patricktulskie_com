@@ -3,7 +3,7 @@ layout: default
 navbar: orange
 ---
 
-<section class="py-5 text-center container">
+<section class="py-4 text-center container">
   <div class="row py-lg-5">
     <div class="col-lg-6 col-md-8 mx-auto">
       <h1 class="fw-light">Find Me on the Internets</h1>
@@ -12,19 +12,23 @@ navbar: orange
   </div>
 </section>
 
-<div id="social-media-links" class="py-5 bg-light">
-  <ul class="social-list">
-    {% assign sm = site.data.social-media %}
-    {% for entry in sm %}
-      {% assign key = entry | first %}
-      <li class="social-list-item">
-        <a href="{{ sm[key].href }}/{{ sm[key].id }}" title="{{ sm[key].title }}" target="blank">
-          <button class="btn btn-{{ sm[key].color }} btn-rounded">
-            <i class="fa-brands {{ sm[key].fa-icon }}"></i> {{ sm[key].title }}
-          </button>
-        </a>
-      <li/>
-    {% endfor %}
-  </ul>
-</div>
+<section class="py-3 bg-light">
+  <div class="py-3">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <ul class="link-list">
+        {% assign sm = site.data.social-media %}
+        {% for entry in sm %}
+        {% assign key = entry | first %}
+          <li class="link-list-item">
+            <a href="{{ sm[key].href }}/{{ sm[key].id }}" title="{{ sm[key].title }}" target="blank">
+              <button class="btn btn-{{ sm[key].color }} btn-rounded">
+                <i class="fa-brands {{ sm[key].fa-icon }}"></i> {{ sm[key].title }}
+              </button>
+            </a>
+          <li/>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
 
