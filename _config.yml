@@ -4,7 +4,7 @@ email: patricktulskie@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Patrick Tulskie dot com
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://patricktulskie.com" # the base hostname & protocol for your site
+url: "https://patricktulskie.com" # the base hostname & protocol for your site
 twitter_username: patricktulskie
 github_username:  patricktulskie
 permalink: posts/:year/:month/:title/
@@ -24,5 +24,5 @@ exclude:
 - "*.yml"
 - Dockerfile
 
-gems:
-  - jekyll-sitemap
+plugins:
+- jekyll-sitemap
