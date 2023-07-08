@@ -2,13 +2,13 @@
 <html>
   {% include head.html %}
 
-  <body>
+  <body class="d-flex flex-column min-vh-100">
+    {% include header.html %}
+
     <main>
-      {% include header.html %}
-
       {{ content }}
-
-      {% include footer.html %}
     </main>
+
+    {% include footer.html %}
   </body>
 </html>
